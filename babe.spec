@@ -31,6 +31,7 @@ BuildRequires:  cmake(KF5I18n)
 BuildRequires:  cmake(KF5Config)
 BuildRequires:  cmake(KF5)
 BuildRequires:  cmake(Taglib)
+BuildRequires:	pkgconfig(taglib)
 
 %description
 Babe will handle your whole music collection
