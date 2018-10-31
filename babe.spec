@@ -1,7 +1,7 @@
 Name:		babe
 Summary:	Babe Media Player
 Version:	1.2.1
-Release:	1
+Release:	2
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		https://babe.kde.org/
