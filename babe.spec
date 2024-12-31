@@ -38,6 +38,10 @@ by retreaving semantic information from the web.
 
 Just relax, enjoy and discover your new music 
 
+This package is deprecated because it has been
+abandoned upstream. It is probably preferable to
+use QMPlay2 or a similar alternative.
+
 %prep
 %autosetup -p1
 %cmake_kde5 \
