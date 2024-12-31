@@ -5,9 +5,8 @@ Release:	3
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		https://babe.kde.org/
+# https://invent.kde.org/umaintained/babe
 Source0:	http://download.kde.org/stable/%{name}/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	cmake(ECM)
-
 BuildRequires:  cmake(ECM)
 BuildRequires:  cmake(Qt5Core)
 BuildRequires:  cmake(Qt5DBus)
@@ -40,8 +39,9 @@ by retreaving semantic information from the web.
 Just relax, enjoy and discover your new music 
 
 %prep
-%setup -q
-%cmake_kde5
+%autosetup -p1
+%cmake_kde5 \
+	-DTAGLIB_LIBRARIES='-ltag'
 
 %build
 %ninja -C build
@@ -55,4 +55,3 @@ Just relax, enjoy and discover your new music
 %{_iconsdir}/hicolor/*/apps/*.svg
 %{_datadir}/applications/org.kde.babe.desktop
 %{_datadir}/metainfo/org.kde.babe.appdata.xml
-
